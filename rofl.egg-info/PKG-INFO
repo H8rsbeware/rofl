@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: rofl
+Version: 0.1.0
+Summary: Helpers for building Rofi script modes
+Requires-Python: >=3.11

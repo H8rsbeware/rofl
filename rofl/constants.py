@@ -1,0 +1,3 @@
+NUL = "\0"
+UNIT_SEPARATOR = "\x1f"
+ROW_DELIMITER = "\n"

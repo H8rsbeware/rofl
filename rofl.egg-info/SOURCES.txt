@@ -1,0 +1,9 @@
+pyproject.toml
+rofl/__init__.py
+rofl/py.typed
+rofl/request.py
+rofl/response.py
+rofl.egg-info/PKG-INFO
+rofl.egg-info/SOURCES.txt
+rofl.egg-info/dependency_links.txt
+rofl.egg-info/top_level.txt
