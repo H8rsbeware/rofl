@@ -11,7 +11,7 @@ from .type import RofiRequestType
 class RofiRequest:
     event: RofiRequestType
     raw_event_input: int
-    selected_text: str | None
+    accepted_text: str | None
     data: str | None
     custom_key: int | None
     info: str | None
@@ -39,7 +39,7 @@ class RofiRequest:
         return RofiRequest(
             event=rtype,
             raw_event_input=raw_input,
-            selected_text=sel_text,
+            accepted_text=sel_text,
             custom_key=custom_key,
             data=environ.get("ROFI_DATA"),
             info=environ.get("ROFI_INFO"),

@@ -26,6 +26,7 @@ class RofiRouter:
         self._request = req
         self._fallback: Callable[..., Any] | None = None
 
+
     def run(self, *args: Any, **kwargs: Any) -> None:
         """Finds and executes the bound function securely."""
         if self._request is None:
@@ -49,7 +50,10 @@ class RofiRouter:
         return
 
     def write(self, str: str) -> None:
-        sys.stdout.write(str)
+        _ = sys.stdout.write(str)
+
+    def debug(self, *values: object) -> None:
+        print(*values, file=sys.stderr)
 
     @classmethod
     def from_environment(
